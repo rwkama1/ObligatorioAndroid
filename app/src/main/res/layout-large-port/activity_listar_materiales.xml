@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.waldemar.obligatorioandroid.ListarMaterialesActivity">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <fragment
+            android:id="@+id/frgDetalleMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:name="com.example.waldemar.obligatorioandroid.DetalleMaterialFragment"
+            tools:layout="@layout/fragment_detalle_material" />
+
+        <fragment
+            android:id="@+id/frgListadoMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:name="com.example.waldemar.obligatorioandroid.ListarMaterialesFragment"
+            tools:layout="@layout/fragment_listar_materiales" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

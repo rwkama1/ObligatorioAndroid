@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.waldemar.obligatorioandroid.AgregarMaterial">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="REGISTRO DE MATERIALES"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvObraMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="20sp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etNombreEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del Material" />
+
+            <EditText
+                android:id="@+id/etDescripcionEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripcion del Material" />
+
+
+            <EditText
+                android:id="@+id/etStockedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Stock del Material"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etFechaedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Fecha de Alta"
+                android:enabled="false"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnelegirFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnElegirFechaOnClick"
+                android:text="Elegir Fecha" />
+
+            <Button
+                android:id="@+id/btnRegistrarMaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrar Material"
+                android:onClick="btnAgregarMaterialOnClick"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

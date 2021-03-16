@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.waldemar.obligatorioandroid.AgregarMovimiento">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Movimientos"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="Ingrese una cantidad"
+      />
+
+    <EditText
+        android:id="@+id/etObservacion"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Ingrese una observación"
+     />
+
+
+    <Button
+        android:id="@+id/btnAgregarMovimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Movimiento"
+        android:onClick="btnAgregarMovimientoOnClick"
+        />
+
+    />
+</LinearLayout>

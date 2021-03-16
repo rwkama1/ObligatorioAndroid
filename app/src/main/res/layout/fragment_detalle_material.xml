@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.waldemar.obligatorioandroid.DetalleMaterialFragment">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:freezesText="true" />
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:freezesText="true" />
+
+    <TextView
+        android:id="@+id/tvStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:freezesText="true" />
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:textSize="13sp" />
+
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar Descripcion del Material"
+        android:onClick="btnModificarOnClick"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/btnIrAMov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar Movimientos del Material"
+        android:onClick="btnIraMovOnClick"
+        />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
